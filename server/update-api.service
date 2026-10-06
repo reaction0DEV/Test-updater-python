@@ -1,0 +1,17 @@
+[Unit]
+Description=Serveur d'API de mises à jour sécurisé
+After=network.target
+
+[Service]
+Type=simple
+# ⚠ Remplacez "votre_utilisateur" par votre vrai login Linux
+User=votre_utilisateur
+WorkingDirectory=/home/votre_utilisateur/update-system/server
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/votre_utilisateur/update-system/logs/api.log
+StandardError=append:/home/votre_utilisateur/update-system/logs/api.log
+
+[Install]
+WantedBy=multi-user.target

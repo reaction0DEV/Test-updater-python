@@ -1,0 +1,13 @@
+{
+  "filename": "app-1.1.zip",
+  "sha256": "54deb49a5f51bad4bf4e7776c6b0e849185e12c29c6cfc5c61842230f4412bc1",
+  "size": 5161,
+  "changelog": [
+    "Interface améliorée avec onglets",
+    "Historique complet des mises à jour",
+    "Indicateur visuel de la nouvelle version",
+    "Meilleure gestion des erreurs réseau"
+  ],
+  "released_at": "2026-06-20T00:11:22.645092+00:00",
+  "min_client_version": "1.0"
+}

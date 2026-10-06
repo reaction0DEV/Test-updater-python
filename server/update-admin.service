@@ -1,0 +1,17 @@
+[Unit]
+Description=Interface d'administration des mises à jour
+After=network.target
+
+[Service]
+Type=simple
+# ⚠ Remplacez "votre_utilisateur" par votre vrai login Linux
+User=votre_utilisateur
+WorkingDirectory=/home/votre_utilisateur/update-system/server
+ExecStart=/usr/bin/node admin-site.js
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/votre_utilisateur/update-system/logs/admin.log
+StandardError=append:/home/votre_utilisateur/update-system/logs/admin.log
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,17 @@
+[Unit]
+Description=Site de téléchargement du client de mises à jour
+After=network.target
+
+[Service]
+Type=simple
+# ⚠ Remplacez "votre_utilisateur" par votre vrai login Linux
+User=votre_utilisateur
+WorkingDirectory=/home/votre_utilisateur/update-system/server
+ExecStart=/usr/bin/node download-site.js
+Restart=always
+RestartSec=5
+StandardOutput=append:/home/votre_utilisateur/update-system/logs/site.log
+StandardError=append:/home/votre_utilisateur/update-system/logs/site.log
+
+[Install]
+WantedBy=multi-user.target

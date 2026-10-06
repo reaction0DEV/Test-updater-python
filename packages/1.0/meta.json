@@ -1,0 +1,11 @@
+{
+  "filename": "app-1.0.zip",
+  "sha256": "f18f95639a0622a41a2e16d6d9b02434d566387332f4eeb27a865ccc22f074ad",
+  "size": 6163,
+  "changelog": [
+    "Version initiale",
+    "Interface avec vérification de mises à jour intégrée"
+  ],
+  "released_at": "2026-06-20T00:11:22.638174+00:00",
+  "min_client_version": "1.0"
+}
